@@ -13,16 +13,16 @@ text-align: center;
 
 
 
-const Button = ({buttons, changeNames}) => {
+const Button = ({message, id, status, changeNames}) => {
 
     
         
       
     return (
-        <div>
-           {buttons.map(item=><MyButton onClick={changeNames}>{item.message}</MyButton>)}
+        <>
+           <MyButton onClick={()=>changeNames(id,message,status)}>{message} </MyButton>
             
-        </div>
+        </>
     )
 }
 
