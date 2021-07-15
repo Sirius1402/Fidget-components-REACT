@@ -13,15 +13,12 @@ text-align: center;
 
 
 
-const Button = ({message, id, status, changeNames}) => {
+const Button = ({ changeNames, message, id }) => {
 
-    
-        
-      
     return (
         <>
-           <MyButton onClick={()=>changeNames(id,message,status)}>{message} </MyButton>
-            
+            <MyButton onClick={id === 1 ? changeNames : undefined}> {message} </MyButton>
+
         </>
     )
 }
