@@ -15,7 +15,7 @@ updates:
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
-    directory: "/razvan-ciobanel-resume"
+    directory: "/fidget-components"
     schedule:
       interval: "daily"
     target-branch: "master"
